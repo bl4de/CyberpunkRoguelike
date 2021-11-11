@@ -53,7 +53,9 @@ def main() -> None:
         vsync=True,
     ) as context:
         root_console = tcod.Console(screen_width, screen_height, order="F")
+
         while True:
+            ''' main game loop '''
             engine.render(console=root_console, context=context)
             events = tcod.event.wait()
             engine.handle_events(events)
