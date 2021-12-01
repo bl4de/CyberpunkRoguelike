@@ -30,6 +30,7 @@ class GameMap:
         self.explored = np.full(
             (width, height), fill_value=False, order="F"
         )  # Tiles the player has seen before
+        self.downstairs_location = (0, 0)
 
     @property
     def gamemap(self) -> GameMap:
