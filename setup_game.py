@@ -45,7 +45,6 @@ def new_game() -> Engine:
         map_height=map_height,
         max_monsters_per_room=max_monsters_per_room,
         max_items_per_room=max_items_per_room,
-        engine=engine,
     )
     engine.game_world.generate_floor()
     engine.update_fov()
